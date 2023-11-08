@@ -8,7 +8,7 @@ const apiRouter = Router();
 apiRouter.get("/api", async (req: Request, res: Response) => {
   const keyword = req.query.keyword as string;
 
-  // if does not pass de keyword on the path returns error.
+  // if does not pass an keyword on the path returns error.
   if (!keyword) {
     res.status(400).json({ error: "Keyword is required." });
     return;
