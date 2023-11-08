@@ -12,9 +12,9 @@
     "test:unit": "jest tests/unit",
     "test:integration": "jest tests/integration --runInBand --detectOpenHandles",
     "lint": "eslint . --ext .ts",
-    "dev": "ts-node-dev src/server.ts --watch",
+    "dev": "ts-node-dev src/app.ts --watch",
     "prestart": "npm run build",
-    "start": "node dist/src/server.js"
+    "start": "node dist/src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +28,8 @@
     "@types/jest": "^29.5.3",
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "axios": "^1.6.1",
+    "cheerio": "^1.0.0-rc.12",
     "eslint": "^8.45.0",
     "eslint-config-standard-with-typescript": "^37.0.0",
     "eslint-plugin-import": "^2.27.5",
