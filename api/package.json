@@ -4,17 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rm -rf ./dist",
     "build": "tsc",
-    "postbuild": "cp ./src/database/*.sql ./dist/src/database/ && npm run create-views",
     "create-views": "mkdir ./dist/src/views/ && cp ./src/views/*.html ./dist/src/views/",
     "test": "jest",
     "test:unit": "jest tests/unit",
     "test:integration": "jest tests/integration --runInBand --detectOpenHandles",
     "lint": "eslint . --ext .ts",
-    "dev": "ts-node-dev src/app.ts --watch",
-    "prestart": "npm run build",
-    "start": "node dist/src/app.js"
+    "dev": "ts-node-dev src/app.ts --watch"
   },
   "keywords": [],
   "author": "",
