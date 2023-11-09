@@ -13,7 +13,7 @@ document.getElementById("scrapeButton").addEventListener("click", async () => {
     // convert to json
     const data = await response.json();
 
-    // if exists result and is biggest that 0, return for each product an html element
+    // if exists result and is biggest than 0, return for each product an html element
     if (data.products && data.products.length > 0) {
       resultsContainer.innerHTML = "";
       data.products.forEach((product) => {
@@ -31,6 +31,6 @@ document.getElementById("scrapeButton").addEventListener("click", async () => {
       resultsContainer.innerHTML = "Result not found.";
     }
   } catch (error) {
-    console.log(error);
+    resultsContainer.innerHTML = "Server offline.";
   }
 });
