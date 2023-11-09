@@ -1,42 +1,42 @@
-# Desafio amazon main page!
+# Amazon main page challenge!
 
-Esse projeto e um desafio para uma vaga de emprego. Ele permite que os usuários insiram uma palavra-chave em uma página da web, pressionem um botão e obtenham informações sobre produtos da Amazon. O servidor faz a busca na Amazon e envia os resultados para a página da web, que os exibe de forma organizada e estilizada. Dessa forma, os usuários podem ver as informações de produtos da Amazon com base em uma palavra-chave de pesquisa.
+This project is a challenge for a job opening. It allows users to enter a keyword on a web page, press a button, and get product information from Amazon. The server searches Amazon and sends the results to the web page, which displays them in an organized and stylized way. This way, users can see Amazon product information based on a search keyword.
 
-O back-end é a parte do projeto que opera no servidor.
-Utiliza a linguagem Node.js para criar um servidor.
-Configura um endpoint (URL) chamado /api que recebe solicitações de pesquisa.
-Quando alguém faz uma solicitação para /api?keyword=algumaPalavra, o servidor busca essa palavra-chave na Amazon.
+The backend is the part of the project that operates on the server.
+It uses the Node.js language to create a server.
+Configures an endpoint (URL) called /api that receives search requests.
+When someone makes a request to /api?keyword=someWord, the server searches Amazon for that keyword.
 Front-end (HTML, CSS, JavaScript):
 
-O front-end é a parte visível para o usuário em um navegador.
-Inclui uma página da web com um campo de texto para inserir uma palavra-chave e um botão para iniciar a busca.
-Quando o botão é clicado, um script JavaScript faz uma solicitação ao servidor para buscar informações da Amazon.
-O resultado da busca é exibido na página da web.
+The front-end is the user-visible part of a browser.
+It includes a web page with a text field to enter a keyword and a button to start the search.
+When the button is clicked, a JavaScript script makes a request to the server to fetch information from Amazon.
+The search result is displayed on the web page.
 
-O CORS é um mecanismo de segurança no navegador que controla as solicitações entre domínios diferentes.
-Para permitir que o front-end acesse o back-end (em domínios diferentes), configuramos o servidor para permitir solicitações de origens específicas.
+CORS is a security mechanism in the browser that controls requests between different domains.
+To allow the frontend to access the backend (across different domains), we configure the server to allow requests from specific origins.
 
-# Para rodar o projeto
+# To run the project
 
-1. Clone o repositório
+1. Clone the repository
 
 - `https://github.com/williamasjr/amazon-clone.git`.
 
-2. Instale as dependências e inicialize o projeto
+2. Install dependencies and initialize the project
 
-- Instale as dependências:
+- Install dependencies:
   - `npm install`
-- Inicialize o projeto:
+- Initialize the project:
   - `npm run dev`
 
-Isso iniciará o servidor Node.js na porta 3000.
+This will start the Node.js server on port 3000.
 
-4. Executar o Front-end
+4. Run the Front-end
 
-Abra o arquivo HTML (index.html) em um navegador da web.
+Open the HTML file (index.html) in a web browser.
 
-Você verá a página da web com um campo de entrada para a palavra-chave e um botão.
+You will see the web page with a keyword input field and a button.
 
-Digite uma palavra-chave de pesquisa na caixa de entrada e clique no botão "Search".
+Enter a search keyword in the input box and click the "Search" button.
 
-Os resultados da pesquisa serão exibidos na página em um formato organizado e estilizado.
+The search results will be displayed on the page in an organized and stylized format.
